@@ -1,75 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>Liste interactive de cadeaux de Noël</title>
     <meta name="description" content="Créer votre liste de cadeaux et envoyez-là à vos ami.e.s">
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="Style.css">
     <script src="script.js" defer></script>
-  </head>
-  <body>
-
-  <header>
-    <div  class="container">
-      <nav>
-        <ul>
-      <li> <a class="navbar-brand" href="#">L'Atelier du bonheur Mercantile</a></li>
-      <p class="nav-item">
-      <li> <a class="nav-link active" href="#">Ma liste</a></li>
-      </p>
-      <p class="nav-item">
-      <li> <a class="nav-link" aria-current="page" href="#">Listes de mes ami.e.s</a></li>
-      </p>
-        </ul>
-          </nav>
-
-    <h3>Liste de cadeaux interactive Bruno</h3>
-    <p class="text-muted ms-1 mb-3">Ajouter des items à votre liste de cadeaux souhaités puis envoyez votre liste à vos
-                                    ami.e.s.</p>
+</head>
+<body>
+<header class="flex">
+    <a class="navbar-brand" href="#">L'Atelier du bonheur Mercantile</a>
+    <div class="flex">
+        <p class="nav-item">
+            <a class="nav-link active" href="#">Ma liste</a>
+        </p>
+        <p class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"><span>Listes de mes ami.e.s</span></a>
+        </p>
     </div>
-  </header>
-
-
-    <main>
-
-        <div class="row">
-
-    <h4 class="mb-3">Ajouter un item à la liste</h4>
+</header>
+<h3>Liste de cadeaux interactive de Bruno Leonardo!</h3>
+<p class="text-muted ms-1 mb-3">Ajouter des items à votre liste de cadeaux souhaités puis envoyez votre liste à vos
+    ami.e.s.</p>
+<main class="flex">
+    <div id="additem" class="col">
+        <h4 class="mb-3">Ajouter un item à la liste</h4>
+        <div class="mb-3">
+            <p>Description :</p>
+            <input type="text" id="desc" name="essai" required></input>
         </div>
-    <div class="mb-3">
-      <p>Description :</p>
-      <input type="text" id="desc" name="essai" required></input>
+        <div class="mb-4">
+            <p>Valeur estimée ($) :</p>
+            <input type="number" id="valeur">
+        </div>
+        <div class="d-grid gap-2">
+            <button>Ajouter</button>
+            <br>
+            <button>Annuler</button>
+        </div>
     </div>
-    <div class="mb-4">
-      <span>Valeur estimée ($) :</span><br>
-      <input type="number" id="valeur">
+    <div id="maliste" class="col">
+        <h3>Ma liste</h3>
+        <p class="list">
+        <p>Crocs des fêtes : <span>14$</span></p>
+        <p>Une tuque des fêtes :<span>42$</span></p>
+        <p>Un chandail laid des fêtes :<span>25$</span></p>
+        <p>Total: 81$</p>
+        </p>
+        <p class="col-form-label h3">Destinataire:</p>
+        <input id="email" type="text">
+        <div>
+            <button>Confirmer et envoyer</button>
+            <button>Recommencer</button>
+        </div>
     </div>
-    <div class="d-grid gap-2">
-    </div>
-      <button>Ajouter</button>
-      <br>
-      <button>Annuler</button>
-
-
-
-
-    <h3>Ma liste</h3>
-    <p class="list">
-      <p>Crocs des fêtes : <span>14$</span></p>
-      <p>Une tuque des fêtes :<span>42$</span></p>
-      <p>Un chandail laid des fêtes :<span>25$</span></p>
-      <p>Total: 81$</p>
-    </p>
-    <p class="col-form-label h3">Destinataire:</p>
-    <input id="email" type="text">
-    <div>
-      <button>Confirmer et envoyer</button>
-      <button>Recommencer</button>
-    </div>
-      </div>
-
-
-  </main>
-  </body>
+</main>
+</body>
 </html>
