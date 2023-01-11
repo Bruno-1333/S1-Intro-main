@@ -8,9 +8,8 @@ body{
 }
 a{
     text-decoration: none;
-    color: #000;
+    color: black;
 }
-
 .navbar-brand{
     font-size: 1.1rem;
     margin-right: 1rem;
@@ -45,8 +44,8 @@ main h3,h4{
 main h4{
     padding-bottom: 1rem;
 }
-main h3{
-
+p{
+    padding-bottom:  10px;
 }
 .col{
     width: 614px;
